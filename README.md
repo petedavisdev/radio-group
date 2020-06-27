@@ -4,28 +4,25 @@ Use &lt;radio-group> to enhance your radio inputs :smile: So much better than &l
 Simple example:
 
 ``` html
-<radio-group name="contact">
-  <radio-button value="yes">Yes please</radio-button>
-  <radio-button value="no">No thanks</radio-button>
+<radio-group name="Payment">
+  <radio-button value="Monthly" />
+  <radio-button value="Annual" />
 </radio-group>
 ```
 
-Should output:
+becomes:
 
 ``` html
-<fieldset role="radiogroup" class="RadioGroup">
-<legend>House</legend>
-  <div class="RadioGroup-container">
-    <label class="RadioButton">
-      <input type="radio" name="House" value="Griffindor">
-      Griffindor
-    </label>
-    <label class="RadioButton">
-      <input type="radio" name="House" value="Hufflepuff">
-      Hufflepuff
-    </label>
-  </div>
-</fieldset>
+<div class="RadioGroup" role="radiogroup" aria-label="Payment">
+  <label>
+    <input type="radio" name="Payment" value="Monthly">
+    Monthly
+  </label>
+  <label>
+    <input type="radio" name="Payment" value="Annual">
+    Annual
+  </label>
+</div>
 ```
 
 All the attributes!:
