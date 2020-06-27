@@ -4,13 +4,9 @@ Use &lt;radio-group> to enhance your radio inputs :smile: So much better than &l
 Simple example:
 
 ``` html
-<radio-group name="House">
-  <radio-button value="Griffindor">
-    Griffindor
-  </radio-button>
-  <radio-button value="Hufflepuff">
-    Hufflepuff
-  </radio-button>
+<radio-group name="contact">
+  <radio-button value="yes">Yes please</radio-button>
+  <radio-button value="no">No thanks</radio-button>
 </radio-group>
 ```
 
@@ -19,7 +15,7 @@ Should output:
 ``` html
 <fieldset role="radiogroup" class="RadioGroup">
 <legend>House</legend>
-  <div class="RadioGroup-container -colAuto" style="max-height: 50vh; overflow-y: auto;>
+  <div class="RadioGroup-container">
     <label class="RadioButton">
       <input type="radio" name="House" value="Griffindor">
       Griffindor
